@@ -1,3 +1,5 @@
+import { swap } from './utils';
+
 /**
  * @function bubbleSort
  * @param  {number[]} array {unsorted}
@@ -13,14 +15,11 @@ function bubbleSort(array) {
     for (let j = 0; j < i - 1; j++) {
       counter++;
       if (array[j] > array[j + 1]) {
-        // or [array[j], array[j + 1]] = [array[j + 1], array[j]];
-        const temp = array[j + 1];
-        array[j + 1] = array[j];
-        array[j] = temp;
+        swap(array, j, j + 1);
         swapWasMade = true;
       }
     }
-    // if (!swapWasMade) break;
+    if (!swapWasMade) break;
   }
   console.log(counter);
   return array;
