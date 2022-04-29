@@ -30,3 +30,20 @@ var guessNumber = function (n) {
   }
 };
 // @lc code=end
+
+// 63ms
+// const guessHigherOrLower = function higherOrLower(n) {
+//   let left = 1;
+//   let right = n;
+//   let middle = Math.floor((right + left) / 2);
+//   while(guess(middle) != 0) {
+//     const guessed = guess(middle);
+//     if(guessed == 1) {
+//       left = middle + 1;
+//     } else {
+//       right = middle - 1;
+//     }
+//     middle = Math.floor((right + left) / 2);
+//   }
+//   return middle;
+// }
