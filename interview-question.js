@@ -1,4 +1,5 @@
-// Interview question
+// TODO This is a work in progress
+// Interview question, from some youtube video I found.
 function getSmallestWord(words, inputWord) {
   const dictionary = {};
   words.forEach((word) => {
