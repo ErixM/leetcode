@@ -1,2 +1,3 @@
 # leetcode
-My tries with leetcode problems
+
+My solutions to some leetcode problems.
